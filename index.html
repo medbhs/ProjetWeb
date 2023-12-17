@@ -14,6 +14,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	<!--header-->
@@ -32,7 +33,7 @@
 	</header>
 	<!--hero-->
 	<section class="hero" id="home">
-		<div class="main-content">
+		<div class="main-content" data-aos="fade-in">
 			<h4>Hi, There!</h4>
 			<h1>I'm <span>Mohamed</span></h1>
 			<p>A passionate student at Esprit with a deep-rooted enthusiasm for engineering<br>
@@ -52,10 +53,10 @@
 	</section>
 	<!--about-->
 	<section class="about" id="about">
-		<div class="about-img">
+		<div class="about-img" data-aos="zoom-in-up">
 			<img src="./img/about.png" alt="">
 		</div>
-		<div class="about-text">
+		<div class="about-text" data-aos="zoom-in-down">
 			<h2>I am an <span>Embedded Systems </span> graduate<br>and a Future Engineer.</h2>
 			<div class="exp-area">
 				<p class="exp">
@@ -81,13 +82,63 @@
 		</div>
 
 	</section>
+	<!--Portfolio-->
+	<section class="portfolio" id="portfolio">
+		<div class="center-text" data-aos="fade-down">
+			<h2>My <span>Portfolio</span></h2>
+		</div>
+
+		<div class="Portfolio-content" data-aos="zoom-in-down">
+			<div class="row">
+				<img src="img/vpn.png">
+				<div class="main-row">
+					<div class="row-text">
+						<h5>VPN</h5>
+					</div>
+					<div class="row-icon">
+						<i class="ri-github-fill"></i>
+					</div>
+				</div>
+				<h4>Creating a Virtual Private Network</h4>
+			</div>
+
+			<div class="row">
+				<img src="img/smartinterphone.jpeg">
+				<div class="main-row">
+					<div class="row-text">
+						<h5>Smart Interphone</h5>
+					</div>
+					<div class="row-icon">
+						<i class="ri-github-fill"></i>
+					</div>
+				</div>
+				<h4>Creating a Smart Interphone</h4>
+			</div>
+
+			<div class="row">
+				<img src="img/blood.jpeg">
+				<div class="main-row">
+					<div class="row-text">
+						<h5>Blood Management App</h5>
+					</div>
+					<div class="row-icon">
+						<i class="ri-github-fill"></i>
+					</div>
+				</div>
+				<h4>Creating a Blood Management App</h4>
+			</div>
+
+
+
+		</div>		
+	</section>
 
 	<!--Contact-->
 	<section class="contact" id="contact">
-		<div class="center-text">
+		<div class="center-text" data-aos="fade-down">
 			<h2>Contact <span>Me</span></h2>
 		</div>
-		<div class="contact-form">
+		<div class="contact-form" data-aos="zoom-in">
 			<form action="">
 				<input type="text" placeholder="Your name" required>
 				<input type="email" placeholder="Email Adress.." required>
@@ -98,6 +149,15 @@
 		</div>
 
 	</section>
+	<div class="footer">
+		<div class="copyright">
+			<p>2023 Belhaj Essghaier Mohamed, All Rights Reserved.</p>
+		</div>
+		<a href="#home" class="scroll-top">
+			<i class="ri-arrow-up-s-fill"></i>
+		</a>
+
+	</div>
 
 
 
@@ -105,7 +165,13 @@
 	<!--js link-->
 	<script src="./js/script.js"></script>
 
-
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init({
+		offset: 300,
+		durattion: 2400,
+	  });
+	</script>
 
 </body>
 </html>
